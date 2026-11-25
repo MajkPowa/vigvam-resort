@@ -1,12 +1,14 @@
 # HorizonX · pohyb pro Vigvam
 
-Rozbor veřejných ukázek z 25. listopadu 2026. Tři oficiální videoukázky mají 1 920 × 1 080 px a 30 snímků za sekundu. Časy níže označují polohu v nahrávce. Vybrané přechody jsem porovnal po 0,2 s. Z nahrávky nelze určit přesnou křivku zrychlení ani rychlost vstupu uživatele. Hodnoty v části „Použití ve Vigvamu“ jsou návrhem pro vlastní komponenty.
+Rozbor veřejných ukázek z 25. listopadu 2026. Tři oficiální videoukázky mají 1 920 × 1 080 px a 30 snímků za sekundu. Časy označují polohu v nahrávce. U Altury je průchod ze vstupu do obývacího pokoje proměřený po jednotlivých snímcích. Rozestupy a podoba písma vycházejí z obrazu. Původní křivka animace a rychlost pohybu uživatelova kolečka zůstávají neznámé.
 
 ## Altura Coastal Residences
 
 **Pozorování.** V úvodním záběru zakrývá skutečný obrys střechy spodní část písma. Při posunu celé úvodní plochy vyjede zdola čelní pohled do domu. V čase 3,8 s je nad vstupem ostrý titulek, ve 4,0 s slábne a ve 4,2 s je pryč. Mezi 4,2 a 4,8 s se dveřní rámy zvětšují a mizí za okraji obrazu. V 5,0 s se vlevo nad obývacím pokojem objevuje měkký nový titulek, v 5,2 s je ostrý. Další místnost má titulek na opačné straně. Autor uvádí 421 zdrojových snímků, osm zastávek a posun na sousední zastávku kolečkem, swipem či šipkou. Dvanáctisekundový sestřih končí u ložnice. [Popis autora](https://horizonx.so/explore/altura-coastal-residences) · [Průchod dveřmi ve videu](https://cdn.horizonx.so/altura-coastal-residences/altura-coastal-residences-scroll-detail-v1.mp4#t=3.8,5.2)
 
-**Použití ve Vigvamu.** Slovo za střechou lze vytvořit dvěma přesně zarovnanými vrstvami jedné fotografie a maskou skutečného obrysu vigvamu. V galerii soudku jedno stisknutí vybere další snímek. Starý popisek vybledne během prvních 140 ms, dvě fotografie se prolnou během 560 ms a nový popisek se objeví v závěrečných 180 ms. Záběr z exteriéru a záběr z interiéru musí mít vlastní popisy. Průjezd dveřmi vyžaduje souvislou sérii z jednoho prostoru. Na telefonu zůstane svislé posouvání stránky volné.
+**Měření průchodu.** Snímek 0 odpovídá začátku videa. Přibližně mezi snímky 117 a 125 starý nápis změkne a zmizí. Od snímku 125 do 147 prostor vyplňuje samotný obraz. Od snímku 147 do 155 se doostří název další místnosti. Interval má celkem 38 snímků, rozdělených na 8 + 22 + 8. Při doladění bylo vodítkem i to, jak rychle se na mezilehlých snímcích ztrácí a vrací kontrast hran písmen. [Příslušný úsek videa](https://cdn.horizonx.so/altura-coastal-residences/altura-coastal-residences-scroll-detail-v1.mp4#t=3.9,5.17)
+
+**Použití ve Vigvamu.** Šipky v úvodní fotografii přepínají mezi čtyřmi vlastními záběry. Starý popisek odezní za 267 ms, pohyb a prolnutí fotografií zabere 733 ms a nový popisek se doostří za 267 ms. Posun stránky používá stejný poměr fází. Střecha, fotografie a slovo za střechou sdílejí jeden obrazový souřadnicový systém. Pro každý popisek se počítá poloha ve viditelné části stránky, takže se při pomalém posunu i při návratu dají sledovat stejné mezistavy. [Pohyb na webu Vigvamu](pohyb-ve-vigvamu.md)
 
 ## Alder & Stone
 
@@ -28,4 +30,4 @@ Rozbor veřejných ukázek z 25. listopadu 2026. Tři oficiální videoukázky m
 
 ## Omezený pohyb
 
-Při `prefers-reduced-motion: reduce` se fotografie a popisek přepnou přímo. Mapa skočí na vybraný cíl nebo nabídne seznam míst se stejnými odkazy. Hladina zůstane fotografií a kalendář se otevře ihned. Ověřit volbu klávesnicí, dotykem a při přepnutí systémové předvolby během návštěvy. Rezervace je přístupná od prvního vykreslení.
+Při `prefers-reduced-motion: reduce` se fotografie a popisek v úvodu prolnou za 140 ms. Titulky v sekcích zůstávají čitelné. Mapa skočí na vybraný cíl nebo nabídne seznam míst se stejnými odkazy. Hladina zůstane fotografií. Rezervace je přístupná od prvního vykreslení.
